@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Search</title>
+        <style>
+           .container {
+            padding-top:10%;
+            text-align: center;
+           }
+           #searchbar {
+            border: 1px solid grey;
+            width: 550px;
+            height:40px;
+            border-radius:30px;
+            font-size: 15px;
+            padding-left:55px;
+            background-image:url(search-icon-vector.jpg);
+            background-repeat: no-repeat;
+            background-size:42px;
+             }
+            #searchbar:hover{
+                box-shadow: 2px 2px 4px grey;
+                border: 1px solid grey;
+            }
+           #links {
+            text-align: right;
+           }
+           #links > a {
+            text-decoration: none;
+            padding: 10px;
+            font-size:14px;
+           }
+           .button{
+                width: 120px;
+                height: 30px;
+                position: relative;
+                top: 20px;
+                border: none;
+           }
+           .button:hover {
+            border:1px solid grey;
+            border-radius: 3px;
+            box-shadow: 1px 1px 2px grey;
+           }
+           
+        </style>
+</head>
+<body>
+    <div id="links">
+        <a href="img.html">Google Images</a>
+        <a href="advancedsearch.html">Google Advanced Search</a>
+    </div>
+    <div class="container">
+    <form action="https://www.google.com/search">
+        <div class="items">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="picture">
+        </div>
+        <div class="items">
+        <input type="text" name="q" id="searchbar">
+        </div>
+        <div id="buttons">
+        <input type="submit" value="Google Search" class="button" placeholder="Search here">
+        <input type="submit" name="btnI" value="I'm feeling lucky" class="button">
+        </div>
+    </form>    
+</div>
+</body>
+</html>
